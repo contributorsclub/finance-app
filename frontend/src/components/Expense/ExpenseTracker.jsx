@@ -97,7 +97,7 @@ const ExpenseTracker = () => {
                     </button>
                 </div>
 
-                {/* Charts Section */}
+                {/* Charts Section */} 
                 <div className="bg-white shadow-md rounded-lg p-6 mb-6">
                     <div className="flex justify-between items-center mb-4">
                         <h2 className="text-2xl font-bold text-gray-800">
