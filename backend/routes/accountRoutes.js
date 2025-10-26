@@ -1,5 +1,5 @@
 const express = require("express");
-const { addAccount, updateAccount, deleteAccount } = require("../controllers/accountController");
+const { addAccount, updateAccount, deleteAccount, getAccount } = require("../controllers/accountController");
 const authMiddleware = require("../middlewares/auth"); // Ensure only authenticated users access routes
 
 const router = express.Router();
@@ -10,6 +10,3 @@ router.put("/update/:id", authMiddleware, updateAccount); // Update account
 router.delete("/delete/:id", authMiddleware, deleteAccount); // Delete account
 
 module.exports = router;
-
-
-accountRoutes
